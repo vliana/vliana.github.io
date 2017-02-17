@@ -12,17 +12,25 @@
       //create a computer guess
      var computerGuess= Math.floor(Math.random() *MAX_GUESS) +1;
 
-   //get user's name and store in variable
+      //create a variable to hold the user's guess
+          var guess= ""
+          
+          // Keep asking the user to guess until they get it right
+          while (computerGuess != guess) {
+              
+          //get user's name and store in variable
    var guess = prompt( "Enter your guess: ");
    document.write("<h1>You guessed: " + guess);
 
  //compare guesses, double== converts the string to integer
           if (computerGuess== guess) {
-              document.write("<h1>correct!</h1>");
-            }
-          else{
-              document.write("<h1>incorrect!</h1>");
+             alert("correct! you guessed + guess");
+              
           }
-          </script>  
+          else {
+            alert("incorrect");
+              }
+         }
+      </script>  
       </body>
  </html>
