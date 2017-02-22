@@ -1,0 +1,28 @@
+<html>
+  <head>
+     <title>Dice roller</title>     
+     </head>
+   
+    <body>
+    
+    <img width=200 onmouseover="changeImage(this);"
+        onclick= "diceRoll();"
+         src= "http://staticvp.com/1009-1228-thickbox/navy-blue-uv-acrylic-transparent-only-piercing-dice.jpg">
+         <div id="output"></div>
+         
+        
+       <script>
+        function  changeImage(id){
+          id.src=   "http://rs794.pbsrc.com/albums/yy228/jade95_2010/MISC%20Decorated%20or%20Animated%20Images/684f3da4-j95.gif~c200"
+            
+        
+        }
+          function diceRoll() {
+        var randNum= Math.floor(Math.random()*6) +1;
+        document.getElementById("output").innerHTML = "<h1>"+ randNum + "</h1>";
+        }
+       
+        </script>        
+        
+  </body>
+</html>
